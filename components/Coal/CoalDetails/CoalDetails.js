@@ -14,7 +14,7 @@ export default function CoalDetails(props) {
   if (coal.amount > 0) {
     price = (
       <div className={styles.price}>
-        <h1>Cena: {coal.price} zł</h1>
+        <h1>Cena: {coal.price} zł/t</h1>
         <p>Ilość na składzie: {coal.amount} t</p>
       </div>
     );

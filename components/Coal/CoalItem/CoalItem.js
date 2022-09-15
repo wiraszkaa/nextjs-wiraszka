@@ -1,11 +1,11 @@
-import Card from "../../UI/Card";
+import Card from "../../UI/Card/Card";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/Home.module.css";
 
 export default function CoalItem(props) {
   return (
-    <Card empty={props.empty}>
+    <Card className={props.empty ? styles.empty : styles.full}>
       <Link href={`/${props.coal.id}`}>
         <div>
           <div className={styles.image}>

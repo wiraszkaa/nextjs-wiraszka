@@ -9,20 +9,6 @@
   cursor: pointer;
 }
 
-.empty:hover,
-.empty:focus,
-.empty:active {
-  color: red;
-  border-color: red;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: green;
-  border-color: green;
-}
-
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;

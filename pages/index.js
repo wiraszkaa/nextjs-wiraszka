@@ -13,7 +13,7 @@ export default function Home(props) {
   ));
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Wiraszka</title>
         <meta
@@ -35,7 +35,7 @@ export default function Home(props) {
           Strona stworzona przez Jakuba Wiraszkę
         </a>
       </footer>
-    </div>
+    </>
   );
 }
 

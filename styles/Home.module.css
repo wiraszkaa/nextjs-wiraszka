@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: show 1s ease-in-out;
 }
 
 .footer {
@@ -23,6 +24,10 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .title {
@@ -55,4 +60,33 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+}
+
+.empty:hover,
+.empty:focus,
+.empty:active {
+  color: red;
+  border-color: red;
+}
+
+.full:hover,
+.full:focus,
+.full:active {
+  color: green;
+  border-color: green;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-7%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

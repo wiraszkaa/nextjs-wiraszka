@@ -2,6 +2,7 @@ import classes from "./MainNavigation.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import wiraszka from "../../assets/wiraszka-black.png";
+import Button from "../UI/Button/Button";
 
 function MainNavigation() {
   return (
@@ -15,10 +16,10 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/">Strona główna</Link>
+            <Button href="/">Strona Główna</Button>
           </li>
           <li>
-            <Link href="/kontakt">Kontakt</Link>
+            <Button href="/kontakt">Kontakt</Button>
           </li>
         </ul>
       </nav>
