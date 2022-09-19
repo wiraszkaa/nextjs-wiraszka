@@ -9,7 +9,7 @@ function Layout(props) {
     <div>
       <MainNavigation />
       <div className={styles.rails}>
-        <Image src={railway} alt="Railway" width="1920px" height="30px" />
+        <Image src={railway} alt="Railway" layout="fill" />
       </div>
       <main className={styles.main}>{props.children}</main>
       <div className={styles.background}>

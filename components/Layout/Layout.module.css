@@ -7,7 +7,9 @@
 }
 
 .rails {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 5;
   z-index: 1;
 }
 
