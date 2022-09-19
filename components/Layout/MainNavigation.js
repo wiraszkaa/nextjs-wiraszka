@@ -16,16 +16,18 @@ function MainNavigation() {
         </div>
       </Link>
 
-      <nav>
-        <ul>
-          <li>
-            <Button href="/" active={asPath === "/"}>Strona Główna</Button>
-          </li>
-          <li>
-            <Button href="/kontakt" active={asPath === "/kontakt"}>Kontakt</Button>
-          </li>
-        </ul>
-      </nav>
+      <ul>
+        <li>
+          <Button href="/" active={asPath === "/"}>
+            Strona Główna
+          </Button>
+        </li>
+        <li>
+          <Button href="/kontakt" active={asPath === "/kontakt"}>
+            Kontakt
+          </Button>
+        </li>
+      </ul>
     </header>
   );
 }
