@@ -62,17 +62,20 @@
   justify-content: center;
 }
 
+.error {
+  color: red;
+  opacity: 0.7;
+}
+
 .empty:hover,
 .empty:focus,
 .empty:active {
-  color: red;
   border-color: red;
 }
 
 .full:hover,
 .full:focus,
 .full:active {
-  color: green;
   border-color: green;
 }
 

@@ -9,9 +9,19 @@ export default function CoalItem(props) {
       <Link href={`/${props.coal.id}`}>
         <div>
           <div className={styles.image}>
-            <Image src={props.coal.image} alt={props.coal.name} layout="fill" />
+            <Image
+              src={props.coal.image}
+              alt={props.coal.name}
+              layout="fill"
+              priority
+            />
           </div>
           <p className={styles.description}>{props.coal.name}</p>
+          {props.empty && (
+            <p className={`${styles.description} ${styles.error}`}>
+              Brak na składzie
+            </p>
+          )}
         </div>
       </Link>
     </Card>

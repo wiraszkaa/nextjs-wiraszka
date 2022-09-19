@@ -39,7 +39,7 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const client = MongoClient.connect(
     `mongodb+srv://${process.env.LOGIN}:${process.env.PASSWORD}@cluster0.qfdnlmi.mongodb.net/coal?retryWrites=true&w=majority`
   );
@@ -62,6 +62,5 @@ export async function getStaticProps() {
         id: coal._id.toString(),
       })),
     },
-    revalidate: 1,
   };
 }

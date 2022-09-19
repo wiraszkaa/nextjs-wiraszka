@@ -1,5 +1,20 @@
 .main {
+  position: relative;
   margin: 0 auto;
   width: 90%;
   max-width: 40rem;
+  z-index: 1;
+}
+
+.rails {
+  position: relative;
+  z-index: 1;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 0.67;
+  top: -60%;
+  opacity: 0.4;
 }

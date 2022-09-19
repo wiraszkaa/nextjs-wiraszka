@@ -1,14 +1,17 @@
-import classes from "./MainNavigation.module.css";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import wiraszka from "../../assets/wiraszka-black.png";
+import styles from "./MainNavigation.module.css";
+import wiraszka from "../../assets/wiraszka-grey.png";
 import Button from "../UI/Button/Button";
 
 function MainNavigation() {
+  const { asPath } = useRouter();
+
   return (
-    <header className={classes.header}>
+    <header className={styles.header}>
       <Link href="/">
-        <div className={classes.logo}>
+        <div className={styles.logo}>
           <Image src={wiraszka} alt="Wiraszka" layout="fill" />
         </div>
       </Link>
@@ -16,10 +19,10 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Button href="/">Strona Główna</Button>
+            <Button href="/" active={asPath === "/"}>Strona Główna</Button>
           </li>
           <li>
-            <Button href="/kontakt">Kontakt</Button>
+            <Button href="/kontakt" active={asPath === "/kontakt"}>Kontakt</Button>
           </li>
         </ul>
       </nav>
