@@ -4,7 +4,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   animation: show 1s ease-in-out;
 }
@@ -67,6 +67,12 @@
   opacity: 0.7;
 }
 
+.address {
+  text-align: center;
+  line-height: 0.4;
+  font-size: 1.5rem;
+}
+
 .empty:hover,
 .empty:focus,
 .empty:active {
@@ -86,7 +92,7 @@
   }
   50% {
     opacity: 0.5;
-    transform: translateY(-7%);
+    transform: translateY(-4%);
   }
   100% {
     opacity: 1;

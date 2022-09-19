@@ -16,7 +16,7 @@
 .background {
   position: absolute;
   width: 100%;
-  aspect-ratio: 0.67;
-  top: -60%;
+  height: 100%;
+  top: 0;
   opacity: 0.4;
 }

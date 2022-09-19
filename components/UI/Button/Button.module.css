@@ -4,7 +4,7 @@
   text-decoration: none;
   text-transform: uppercase;
   aspect-ratio: 1.2;
-  height: 150px;
+  height: calc(50px + 4vw);
   cursor: pointer;
   overflow: hidden;
   animation: jumpOut 0.2s ease-in-out;
@@ -15,11 +15,11 @@
   text-align: center;
   position: absolute;
   top: 56%;
-  left: -5px;
+  left: 0;
   right: 0;
   transform: translateY(-50%);
   margin: auto;
-  font-size: 15px;
+  font-size: calc(3px + 0.6vw);
   font-weight: bold;
   letter-spacing: 5px;
   z-index: 2;

@@ -1,12 +1,12 @@
 .header {
   position: relative;
   width: 100%;
-  height: 10rem;
+  height: fit-content;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 0 10%;
+  padding: 3rem 10% 0 10%;
   z-index: 2;
 }
 
@@ -14,7 +14,7 @@
   position: relative;
   cursor: pointer;
   aspect-ratio: 3.6;
-  height: 65%;
+  height: calc(20px + 4vw);
   animation: show 1s ease-in-out;
   margin: auto 0;
 }
@@ -33,7 +33,7 @@
 }
 
 .header li {
-  margin-left: 3rem;
+  margin-left: calc(10px + 2vw);;
 }
 
 @keyframes show {
