@@ -12,13 +12,11 @@
 
 .logo {
   position: relative;
-  font-size: 2rem;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
   aspect-ratio: 3.6;
-  height: 100%;
+  height: 65%;
   margin: 4px 0 4px 0;
+  animation: show 1s ease-in-out;
 }
 
 .logo:hover,
@@ -49,4 +47,13 @@
 .header a:active,
 .header a.active {
   color: rgb(221, 221, 221);
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

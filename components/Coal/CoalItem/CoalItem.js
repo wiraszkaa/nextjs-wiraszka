@@ -13,7 +13,6 @@ export default function CoalItem(props) {
               src={props.coal.image}
               alt={props.coal.name}
               layout="fill"
-              priority
             />
           </div>
           <p className={styles.description}>{props.coal.name}</p>
