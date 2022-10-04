@@ -1,10 +1,10 @@
 import Head from "next/head";
-import CoalDetails from "../../components/Coal/CoalDetails/CoalDetails";
+import CoalDetails from "../../components/CoalDetails/CoalDetails";
 import { MongoClient } from "mongodb";
 
 export default function Coal(props) {
   return (
-    <div>
+    <>
       <Head>
         <title>{`Wiraszka ${props.coal.name}`}</title>
         <meta
@@ -13,7 +13,7 @@ export default function Coal(props) {
         />
       </Head>
       <CoalDetails coal={props.coal} />
-    </div>
+    </>
   );
 }
 

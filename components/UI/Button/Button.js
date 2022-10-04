@@ -15,7 +15,7 @@ export default function Button(props) {
         <div className={`${styles.button} ${isIn ? "" : styles.enter} ${props.active ? styles.active : ""}`}>
           <span className={styles.text}>{props.children}</span>
           <div className={styles.cart}>
-            <Image src={cartIcon} alt="Cart" layout="fill" priority />
+            <Image src={cartIcon} alt="Cart" layout="fill" />
           </div>
         </div>
       </Link>

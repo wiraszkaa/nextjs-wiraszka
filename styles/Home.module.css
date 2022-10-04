@@ -1,5 +1,4 @@
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -42,6 +41,7 @@
 }
 
 .description {
+  padding-left: 1rem;
   margin: 2px 0 1rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -49,17 +49,11 @@
 
 .image {
   position: relative;
+  border: 1px white solid;
   border-radius: 25px;
   overflow: hidden;
-  width: 232px;
-  height: 128px;
-}
-
-.grid {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+  width: 60%;
+  aspect-ratio: 1.5;
 }
 
 .error {
@@ -67,22 +61,17 @@
   opacity: 0.7;
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .address {
+  padding-left: 1rem;
   text-align: center;
   line-height: 0.4;
   font-size: 1.5rem;
-}
-
-.empty:hover,
-.empty:focus,
-.empty:active {
-  border-color: red;
-}
-
-.full:hover,
-.full:focus,
-.full:active {
-  border-color: green;
 }
 
 @keyframes show {

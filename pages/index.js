@@ -1,7 +1,27 @@
 import Head from "next/head";
-import CoalItem from "../components/Coal/CoalItem/CoalItem";
+import GridItem from "../components/Grid/GridItem";
 import styles from "../styles/Home.module.css";
 import { MongoClient } from "mongodb";
+import Grid from "../components/Grid/Grid";
+import palletImage from "../assets/pallet.jpg";
+import sandImage from "../assets/sand.jpg";
+
+const transportList = [
+  <GridItem
+    key="0"
+    id="sypkie"
+    name="Materiały Sypkie"
+    image={sandImage}
+    imageStyle={{ filter: "grayscale(0.5)" }}
+  />,
+  <GridItem
+    key="1"
+    id="palety"
+    name="Palety"
+    image={palletImage}
+    imageStyle={{ filter: "grayscale(0.5)" }}
+  />,
+];
 
 export default function Home(props) {
   const coalTypes = props.coalTypes.sort(
@@ -9,7 +29,19 @@ export default function Home(props) {
   );
 
   let coalList = coalTypes.map((coal) => (
-    <CoalItem key={coal.id} coal={coal} empty={coal.amount === 0} />
+    <GridItem
+      key={coal.id}
+      id={coal.id}
+      image={coal.image}
+      name={coal.name}
+      empty={coal.amount === 0}
+    >
+      {coal.amount === 0 && (
+        <p className={`${styles.description} ${styles.error}`}>
+          Brak na składzie
+        </p>
+      )}
+    </GridItem>
   ));
 
   return (
@@ -26,8 +58,12 @@ export default function Home(props) {
       <main className={styles.main}>
         <h1 className={styles.title}>Witamy!</h1>
 
-        <h1>Skład Opału</h1>
-        <div className={styles.grid}>{coalList}</div>
+        <Grid
+          title="Transport Krajowy i Międzynarodowy"
+          description="Ponad 22 lata doświadczenia w branży transportowej."
+          list={transportList}
+        />
+        <Grid title="Skład Opału" description="Węgiel najwyższej jakości z polskich kopalni." list={coalList} />
       </main>
 
       <footer className={styles.footer}>

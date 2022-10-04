@@ -1,0 +1,50 @@
+.gridContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.link:hover,
+.link:active {
+  transform: scale(1.05);
+  transition: 0.5s all;
+}
+
+.empty:hover,
+.empty:focus,
+.empty:active {
+  border-color: red;
+  cursor: pointer;
+}
+
+.full:hover,
+.full:focus,
+.full:active {
+  border-color: green;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 232px;
+  height: 128px;
+}
+
+.description {
+  text-align: center;
+  padding-left: 1rem;
+  margin: 2px 0 1rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}

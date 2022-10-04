@@ -1,8 +1,8 @@
 .main {
   position: relative;
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 90%;
-  max-width: 40rem;
+  max-width: 60rem;
   z-index: 1;
 }
 
@@ -14,9 +14,28 @@
 }
 
 .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
-  opacity: 0.4;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.photo {
+  position: fixed;
+  aspect-ratio: 0.6;
+}
+
+@media (max-width: 530px) and (orientation: portrait) {
+  .photo {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 531px) {
+  .photo {
+    width: 100vw;
+  }
 }

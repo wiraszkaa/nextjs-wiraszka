@@ -8,6 +8,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   padding: 3rem 10% 0 10%;
   z-index: 2;
+  overflow: hidden;
 }
 
 .logo {
@@ -33,7 +34,7 @@
 }
 
 .header li {
-  margin-left: calc(10px + 2vw);;
+  margin-left: 1rem;
 }
 
 @keyframes show {
@@ -42,5 +43,15 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header li {
+    margin-left: 2px;
+  }
+
+  .header {
+    padding: 2rem 2% 0 2%;
   }
 }

@@ -1,0 +1,48 @@
+.coalDetails {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: show 1s ease-in-out;
+}
+
+.coalDetails h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.coalDetails p {
+    font-size: 1.5rem;
+}
+
+.image {
+  position: relative;
+  border: 1px white solid;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1.5;
+}
+
+.price h1 {
+    margin: auto;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-7%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
